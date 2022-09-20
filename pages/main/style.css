@@ -4,23 +4,28 @@
 
 .wrapper {
   max-width: 1160px;
+  margin: 0 auto;
 }
 
 .header {
-	position: relative;
+  position: relative;
   background-color: #000;
-	z-index: 5;
+  z-index: 5;
+  flex: 0 0 auto;
+  height: 80px;
 }
 
 .header-wrap {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 h1 {
-  font-size: 0px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
 }
 
 .logo {
@@ -31,7 +36,8 @@ h1 {
   display: flex;
   gap: 58px;
   align-items: center;
-	list-style-type: none;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .navigation__link {
@@ -41,6 +47,14 @@ h1 {
 }
 
 .navigation__link:active {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.active {
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,72 +75,129 @@ h1 {
   text-fill-color: transparent;
 }
 
+.main {
+  flex: 1 0 auto;
+}
+
 .container {
   display: flex;
   align-items: center;
 }
 
 .promo {
-	position: relative;
+  position: relative;
   background-image: url(../../assets/images/giantPanda.jpg);
   background-size: cover;
-	z-index: 1;
-	top: -80px;
+  z-index: 1;
+  top: -80px;
 }
 
 .promo-wrap {
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	align-items: flex-end;
-	justify-self:flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: flex-end;
+  justify-self: flex-start;
 }
 
 .promo-wrapper {
-	width: 500px;
+  width: 500px;
 }
 
 .title {
-	position: relative;
-	z-index: 2;
-	margin-top: -390px;
-	font-size: 6.65rem;
-	color: #FFF;
-	font-weight: 700;
-	line-height: 75%;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+  margin-top: -390px;
+  font-size: 6.65rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
 .title-yellow {
-	color: #FFEE2E;
+  color: #ffee2e;
 }
 
 .circle {
-	position: relative;
-	z-index: 1;
-	margin-top: 92px;
-	display: block;
-	content: "";
-	width: 465px;
-	height: 465px;
-	right: 73px;
-	border-radius: 50%;
-	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  position: relative;
+  z-index: 1;
+  margin-top: 92px;
+  display: block;
+  content: "";
+  width: 465px;
+  height: 465px;
+  right: 73px;
+  border-radius: 50%;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 }
 
 .button {
-	display: block;
-	width: 298px;
-	padding: 16px;
-	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-	border-radius: 25px;
-	margin: 0 auto;
-	text-transform: uppercase;
-	color: #FFF;
-	font-weight: 500;
-	font-size: 1rem;
-	border: none;
-	margin-bottom: 100px;
+  display: block;
+  width: 298px;
+  padding: 16px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 100px;
+}
+
+.button:hover {
+  background: #e47209;
+  cursor: pointer;
+}
+
+.button:active {
+  background: #4b9200;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.bamboo {
+  position: relative;
+  display: flex;
+  margin-top: 60px;
+}
+
+.bamboo__image {
+  max-width: 609px;
+  max-height: 403px;
+  margin-right: 87px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.bamboo__description-text {
+  line-height: 130%;
+  margin-bottom: 54px;
+}
+
+.bamboo__description-title {
+  font-size: 1.5rem;
+  line-height: 120%;
+  margin-bottom: 34px;
+}
+
+.bamboo__text {
+  line-height: 140%;
+}
+
+.flower {
+  position: absolute;
+  right: 0;
+  top: 792px;
 }
