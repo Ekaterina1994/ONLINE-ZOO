@@ -138,7 +138,7 @@ h1 {
   display: block;
   width: 298px;
   padding: 16px;
-  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%), #f9804b;
   border-radius: 25px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -147,11 +147,13 @@ h1 {
   font-size: 1rem;
   border: none;
   margin-bottom: 100px;
+	transition: 1s;
 }
 
 .button:hover {
   background: #e47209;
   cursor: pointer;
+	transition: 1s;
 }
 
 .button:active {
@@ -211,10 +213,11 @@ h2 {
 }
 
 .arrow {
-  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%), #f9804b;
   border-radius: 50%;
   min-width: 62px;
   height: 62px;
+	transition: 1s;
 }
 
 .arrow:hover {
@@ -245,10 +248,12 @@ h2 {
 .animals__cards-item {
   position: relative;
   width: 366px;
-  border-radius: 5px;
-  border: 1px solid transparent;
-  border-image: linear-gradient(to right bottom,  #f9804b 1.49%, #fe9013 101.44%);
-  border-image-slice: 1;
+	border-radius: 10px;
+	background-image: linear-gradient(white, white),
+	linear-gradient(to right bottom,  #f9804b 1.49%, #fe9013 101.44%);
+	border: 1px solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
   overflow: hidden;
 }
 
@@ -262,6 +267,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 8px 8px 14px 16px;
+	transition: all 1s;
 }
 
 .animals__card-name {
@@ -281,12 +287,11 @@ h2 {
   width: 366px;
   max-height: 366px;
   overflow: hidden;
+	transition: all 1s;
 }
 
 .animals__cards-item:hover .animals__card-image {
-  transform: scale(135%);
-  transition: all 1s;
-  overflow: hidden;
+  transform: scale(1.36);
 }
 
 .animals__cards-item:hover .animals__card-description {
@@ -296,7 +301,7 @@ h2 {
   margin-top: -366px;
   height: 426px;
   align-items: flex-start;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: 1s;
 }
 
@@ -307,6 +312,6 @@ h2 {
 }
 
 .animals__cards-item:hover .animals__card-text2,
-.animals__card-name {
+.animals__cards-item:hover .animals__card-name {
   color: white;
 }
