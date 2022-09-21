@@ -12,6 +12,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: "Roboto", sans-serif;
   height: 100%;
+	user-select: none;
 }
 
 /* Sections

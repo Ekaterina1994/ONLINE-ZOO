@@ -30,6 +30,9 @@ h1 {
 
 .logo {
   padding: 14px 63px 14px 0;
+	width: 82px;
+	height: 52px;
+	fill:#fff;
 }
 
 .navigation {
@@ -115,6 +118,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 60px;
+	user-select: none;
 }
 
 .title-yellow {
@@ -147,13 +151,13 @@ h1 {
   font-size: 1rem;
   border: none;
   margin-bottom: 100px;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .button:hover {
   background: #e47209;
   cursor: pointer;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .button:active {
@@ -204,8 +208,14 @@ h2 {
   top: 792px;
 }
 
+.zoos {
+	margin-top: 180px;
+  display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
 .animals {
-  margin-top: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,7 +227,7 @@ h2 {
   border-radius: 50%;
   min-width: 62px;
   height: 62px;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .arrow:hover {
@@ -259,7 +269,7 @@ h2 {
 
 .animals__cards-item:hover {
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 .animals__card-description {
@@ -267,7 +277,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 8px 8px 14px 16px;
-	transition: all 1s;
+	transition: all 0.3s;
 }
 
 .animals__card-name {
@@ -287,7 +297,7 @@ h2 {
   width: 366px;
   max-height: 366px;
   overflow: hidden;
-	transition: all 1s;
+	transition: all 0.3s;
 }
 
 .animals__cards-item:hover .animals__card-image {
@@ -302,7 +312,7 @@ h2 {
   height: 426px;
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.6);
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .animals__cards-item:hover .animals__card-food {
@@ -314,4 +324,16 @@ h2 {
 .animals__cards-item:hover .animals__card-text2,
 .animals__cards-item:hover .animals__card-name {
   color: white;
+}
+
+.palm {
+  position: absolute;
+  left: 0;
+  top: 2149px;
+}
+
+.strelitzia {
+	position: absolute;
+  right: 0;
+  top: 2334px;
 }
