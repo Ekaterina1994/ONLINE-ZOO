@@ -780,18 +780,19 @@ h2 {
   background: transparent;
   width: 228px;
   border-radius: 5px;
-  background-image: linear-gradient(black, black),
-    linear-gradient(to right bottom, #f9804b 1.49%, #fe9013 101.44%);
-  border: 1px solid transparent;
+  border: 1px solid #f9804b;
   background-origin: border-box;
   background-clip: content-box, border-box;
 	color: #BDBDBD;
+	padding: 5px;
 }
 
 .inputfield::placeholder {
   color: #BDBDBD;
 	padding: 10px 7px 10px 10px;
 }
-/* padding: 10px 7px 10px 10px; */
 
-
+.support-link {
+	border-bottom: 1px solid #FE9013;
+	color: #333B41;
+}
