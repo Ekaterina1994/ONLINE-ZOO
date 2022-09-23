@@ -258,19 +258,15 @@ h2 {
   width: 40px;
   height: 40px;
   -webkit-appearance: none;
-	margin-left: -2px;
+  margin-left: -1px;
 }
 
-.circle-yellow-big {
-	width: 30px;
-	height: 30px;
-	background: transparent;
-	border-radius: 50%;
-	margin-left: -10px;
-	margin-top: -10px;
-}
-.circle-yellow-big:hover {
-	cursor: pointer;
+.grey-line {
+  position: absolute;
+  width: 915px;
+  height: 2px;
+  background: #72828e;
+  left: 30px;
 }
 
 .circle-yellow {
@@ -281,6 +277,10 @@ h2 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+
+.circle-yellow {
+  cursor: pointer;
 }
 
 .one {
@@ -319,7 +319,7 @@ h2 {
   display: flex;
   align-items: center;
   content: "";
-  width: 976px;
+  width: 975px;
   height: 27px;
   background: #404950;
   border-radius: 2px;
@@ -334,7 +334,7 @@ h2 {
   width: 915px;
   height: 27px;
   background: #72828e;
-	background: transparent;
+  background: transparent;
   border-radius: 2px;
   border: 1px solid transparent;
 }
@@ -487,15 +487,187 @@ h2 {
   background: transparent;
   width: 228px;
   border-radius: 5px;
-  background-image: linear-gradient(black, black),
-    linear-gradient(to right bottom, #f9804b 1.49%, #fe9013 101.44%);
-  border: 1px solid transparent;
+  border: 1px solid #f9804b;
   background-origin: border-box;
   background-clip: content-box, border-box;
   color: #bdbdbd;
+  padding: 10px 7px 10px 10px;
+}
+
+.inputfield:focus {
+  border: 1px solid #4b9200;
+  outline: none;
 }
 
 .inputfield::placeholder {
   color: #bdbdbd;
-  padding: 10px 7px 10px 10px;
+}
+
+.donation-information {
+  margin-bottom: 50px;
+}
+
+.donation-information__big-title {
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 130%;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.donation-information__description {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.donation-information__title {
+  color: #fe9013;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 130%;
+}
+
+.money-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+}
+
+.money-text {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  width: 80px;
+  text-align: center;
+}
+
+.another-amount {
+  margin-bottom: 25px;
+  width: 268px;
+  height: 54px;
+  border: 1px solid #929699;
+  border-radius: 2px;
+  padding: 0 10px;
+}
+
+.another-amount::-webkit-inner-spin-button {
+  display: none;
+}
+
+.amount {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  margin: 0 auto 25px;
+}
+
+.another-amount:focus {
+  border: 1px solid #4b9200;
+  color: #4b9200;
+  outline: none;
+}
+
+.another-amount:focus::-webkit-input-placeholder {
+  color: #4b9200;
+}
+
+.dollar {
+  position: absolute;
+  display: block;
+  margin-left: 85px;
+  top: 2px;
+  width: 10px;
+  height: 20px;
+  fill: #929699;
+}
+
+.another-amount:focus .dollar {
+  fill: #4b9200;
+}
+
+.radiobuttons {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto 30px;
+  justify-content: center;
+}
+
+/* .radiobutton-item {
+  position: relative;
+  color: #333b41;
+  width: 58px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.radiobutton-item:hover {
+  cursor: pointer;
+}
+
+.radiobutton-item:active .radiobutton-item::before {
+  background-color: #4b9200;
+}
+
+.radiobutton-item::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-left: -26px;
+  margin-right: 10px;
+  border: 1px solid #FE9013;
+  border-radius: 50%;
+}
+
+.radiobutton-item::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-left: -76px;
+  margin-right: 10px;
+  border: 1px solid #FE9013;
+  background-color: #FE9013;
+  border-radius: 50%;
+} */
+
+.time {
+  display: none;
+}
+
+.radiobutton-item label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+
+.radiobutton-item label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
+}
+
+.time:checked + label:before {
+  border: 1px solid #4b9200;
+  background-color: #4b9200;
+}
+
+.radiobutton-item label:hover:before {
+  filter: brightness(120%);
 }

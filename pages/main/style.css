@@ -409,7 +409,7 @@ h2 {
   margin-bottom: 60px;
 }
 .how-it-works {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   line-height: 130%;
   text-align: center;
@@ -554,7 +554,7 @@ h2 {
 
 .testimonials__title {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 130%;
   text-align: center;
   margin-bottom: 47px;
@@ -784,12 +784,16 @@ h2 {
   background-origin: border-box;
   background-clip: content-box, border-box;
 	color: #BDBDBD;
-	padding: 5px;
+	padding: 10px 7px 10px 10px;
+}
+
+.inputfield:focus {
+  border: 1px solid #4b9200;
+  outline: none;
 }
 
 .inputfield::placeholder {
   color: #BDBDBD;
-	padding: 10px 7px 10px 10px;
 }
 
 .support-link {
