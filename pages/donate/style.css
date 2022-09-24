@@ -268,6 +268,16 @@ h2 {
   margin-left: -1px;
 }
 
+.line-input[type="range"]::-moz-range-thumb {
+  background: url(../../assets/icons/icons_diff/icons_mix/circles-icon.svg);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  -webkit-appearance: none;
+  margin-left: -1px;
+  border: none;
+}
+
 .grey-line {
   position: absolute;
   width: 915px;
@@ -506,6 +516,21 @@ h2 {
   outline: none;
 }
 
+.inputfield:invalid {
+  border: 1px solid #D31414;
+  outline: none;
+}
+
+.inputfield:focus ~ .submit {
+  border-color: #4b9200;
+	color: #4b9200;
+}
+
+.inputfield:invalid ~ .submit {
+  border: 1px solid #D31414;
+  color: #D31414;
+}
+
 .inputfield::placeholder {
   color: #bdbdbd;
 }
@@ -561,8 +586,15 @@ h2 {
   padding: 0 10px;
 }
 
+.another-amount::-webkit-outer-spin-button,
 .another-amount::-webkit-inner-spin-button {
   display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .amount {
@@ -594,7 +626,7 @@ h2 {
   fill: #929699;
 }
 
-.another-amount:focus .dollar {
+.another-amount:focus ~ .dollar path {
   fill: #4b9200;
 }
 

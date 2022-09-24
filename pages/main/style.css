@@ -517,6 +517,16 @@ h2 {
   -webkit-appearance: none;
 }
 
+.line[type="range"]::-moz-range-thumb {
+  background: linear-gradient(to right bottom, #f9804b 1.49%, #fe9013 101.44%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 115px;
+  height: 6px;
+  -webkit-appearance: none;
+}
+
 .line {
   display: block;
   content: "";
@@ -799,6 +809,21 @@ h2 {
 .inputfield:focus {
   border: 1px solid #4b9200;
   outline: none;
+}
+
+.inputfield:invalid {
+  border: 1px solid #D31414;
+  outline: none;
+}
+
+.inputfield:focus ~ .submit {
+  border-color: #4b9200;
+	color: #4b9200;
+}
+
+.inputfield:invalid ~ .submit {
+  border: 1px solid #D31414;
+  color: #D31414;
 }
 
 .inputfield::placeholder {
