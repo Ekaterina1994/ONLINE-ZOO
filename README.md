@@ -1,3 +1,3 @@
 # ONLINE-ZOO
 
-https://Ekaterina-1994.github.io/ONLINE-ZOO/pages/main/
+https://Ekaterina1994.github.io/ONLINE-ZOO/pages/main/
