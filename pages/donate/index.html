@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="/pages/donate/style.css" />
+    <title>Donate</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>PetStory Online</h1>
+      <div class="wrapper header-wrap">
+        <div class="container">
+          <a href="../main/index.html">
+            <svg class="logo">
+              <use xlink:href="../../assets/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="../main/index.html">About</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Map</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Zoos</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link active" href="../donate/index.html"
+                  >Donate</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="auth">
+          <a
+            class="auth__link"
+            href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+            >Designed by &#169;</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="promo promo-donate">
+        <img class="promo-img" src="../../assets/images/panda-seconf-bg.jpg">
+      </section>
+      <section class="pick-and-feed">
+        <div class="wrapper donation-information">
+          <h3 class="donation-information__big-title">
+            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+          </h3>
+          <div class="donation-information__description">
+            Even though the Zoo has been able to reopen, we are at a greatly
+            reduced capacity with educational programs and public and private
+            events cancelled or postponed for additional months. We need you now
+            more than ever to help ensure that we overcome these challenges. We
+            have been actively raising funds in the community, and we are
+            grateful for the generosity. But much more support is still needed,
+            and we need your help! Please consider a gift today – no matter what
+            size – to help us sustain our mission.
+          </div>
+          <h3 class="donation-information__title">Donation Information</h3>
+        </div>
+        <div class="wrapper pick-wrap">
+          <div class="pick-and-feed__description">
+            <h2 class="orange-title">Pick and feed a friend</h2>
+            <div class="pick-and-feed__description-about">
+              We know the animals bring you joy, and in these extraordinary
+              times, we’re glad.
+            </div>
+          </div>
+          <div class="pick__donate">
+            <div class="pick__donate-animals">
+              <div class="pick__donate-number-card">
+                <div class="pick__donate-number-item">
+                  <div class="pick__donate-number">4</div>
+                  <div class="pick__donate-number-description">
+                    Panda diet for the day.
+                  </div>
+                </div>
+                <div class="icon-multiply">
+                  <img
+                    src="../../assets/icons/icons_diff/icons_mix/x-icon.svg"
+                  />
+                </div>
+              </div>
+              <img
+                src="../../assets/icons/icons_animals/icons_284x246/panda_widget1.png"
+              />
+            </div>
+            <div class="donate-line-block">
+              <div class="donate-line__title">Amount</div>
+              <div class="line">
+                <div class="grey-line"></div>
+                <input
+                  class="line-input"
+                  type="range"
+                  min="1"
+                  max="8"
+                  value="3"
+                  step="1"
+                />
+                <div class="circle-yellow one"></div>
+                <div class="circle-yellow two"></div>
+                <div class="circle-yellow three"></div>
+                <div class="circle-yellow four"></div>
+                <div class="circle-yellow five"></div>
+                <div class="circle-yellow six" ></div>
+                <div class="circle-yellow seven"></div>
+                <div class="circle-yellow eight"></div>
+              </div>
+            </div>
+            <div class="money-line">
+              <div class="money-text" id="one">&#36;5000</div>
+              <div class="money-text">&#36;2000</div>
+              <div class="money-text">&#36;1000</div>
+              <div class="money-text">&#36;500</div>
+              <div class="money-text">&#36;250</div>
+              <div class="money-text">&#36;100</div>
+              <div class="money-text">&#36;50</div>
+              <div class="money-text">&#36;25</div>
+            </div>
+            <div class="amount">
+              <input
+                type="number"
+                class="another-amount"
+                name="input"
+                placeholder="Another amount"
+              />
+              <span class="dollar">
+                <svg class="dollar">
+                  <use xlink:href="../../assets/icons/sprite.svg#dollar"></use>
+                </svg>
+              </span>
+            </div>
+            <form>
+              <div class="radiobuttons">
+                <div class="radiobutton-item"><input
+                  class="time"
+                  id="radio-1"
+                  type="radio"
+                  name="price"
+                  value="monthly"
+                /><label for="radio-1">Monthly</label>
+                </div>
+                <div class="radiobutton-item"><input
+                  class="time"
+                  id="radio-2"
+                  type="radio"
+                  name="price"
+                  value="once"
+                  checked
+                /><label for="radio-2">Once</label>
+              </div>
+              </div>
+            </form>
+            <button class="button button-feed">Feed a friend now</button>
+            <div class="pick-and-feed__text">
+              Share with your friends on social networks
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer-wrap">
+        <div class="contacts">
+          <a href="../main/index.html">
+            <svg class="logo">
+              <use xlink:href="../../assets/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <a href="../donate/index.html"
+            ><button class="button button-square">
+              Donate for volunteers
+            </button></a
+          >
+          <div class="social-links">
+            <div class="social-links__item">
+              <button class="social-icon">
+                <svg class="social-icon__facebook">
+                  <use
+                    xlink:href="../../assets/icons/sprite.svg#facebook"
+                  ></use>
+                </svg>
+              </button>
+              <p class="social-links__item-title">Facebook</p>
+            </div>
+            <div class="social-links__item">
+              <button class="social-icon">
+                <svg class="social-icon__twitter">
+                  <use xlink:href="../../assets/icons/sprite.svg#twitter"></use>
+                </svg>
+              </button>
+              <p class="social-links__item-title">Twitter</p>
+            </div>
+            <div class="social-links__item">
+              <button class="social-icon">
+                <svg class="social-icon__instagram">
+                  <use
+                    xlink:href="../../assets/icons/sprite.svg#instagram"
+                  ></use>
+                </svg>
+              </button>
+              <p class="social-links__item-title">Instagram</p>
+            </div>
+            <div class="social-links__item">
+              <button class="social-icon">
+                <svg class="social-icon__youtube">
+                  <use xlink:href="../../assets/icons/sprite.svg#youtube"></use>
+                </svg>
+              </button>
+              <p class="social-links__item-title">Youtube</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__navigation">
+          <ul class="navigation navigation-foo">
+            <li class="navigation__item">
+              <a class="navigation__link" href="../main/index.html"
+                >About</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Map</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Zoos</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <div class="subscribe__field">
+            <div class="subscribe__title">Subscribe to our news</div>
+            <form class="form" action="">
+              <input
+                class="inputfield"
+                type="email"
+                name="input"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="submit">Submit</button>
+            </form>
+          </div>
+          <div class="subscribe__auth">
+            <p class="subscribe__auth-name">Designed by Alisa Samborskaya</p>
+            <p class="subscribe__auth-rights">©RSSchool & ©Yem Digital 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../donate/script.js"></script>
+  </body>
+</html>

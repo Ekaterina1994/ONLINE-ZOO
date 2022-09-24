@@ -1,0 +1,49 @@
+// Colors
+$green: #4b9200;
+$orange_grad: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+$yellow: #ffee2e;
+$salmon_grad: linear-gradient(
+  315.75deg,
+  rgba(254, 210, 144, 0.7) 30.06%,
+  #febdab 100.95%,
+  rgba(254, 210, 144, 0.7) 106.36%
+);
+$pink_grad: linear-gradient(
+  315.75deg,
+  rgba(254, 189, 171, 0.74) 30.06%,
+  rgba(243, 169, 248, 0.66) 50.74%,
+  #e0d8f0 80.49%,
+  #eaf7fe 127.9%,
+  #eaf7fe 149.54%
+);
+$red: #d31414;
+$black_blue: #333b41;
+$grey: #767474;
+$grey_smoky: #ababab;
+$light_grey: #f1f3f2;
+$frosted_glass_white: #fdfdff;
+$white: #ffffff;
+
+// Sizes
+$width_buttons: 298px;
+$height_buttons: 54px;
+$border_radius_buttons_circle: 25px;
+$border_radius_buttons_square: 5px;
+
+// Buttons
+%buttons {
+  width: $width_buttons;
+  height: $height_buttons;
+  color: $white;
+  background-color: $orange_grad;
+}
+
+default_buttons_circle {
+  @extend %buttons;
+  border-radius: $border_radius_buttons_circle;
+}
+
+default_buttons_square {
+  @extend %buttons;
+  border-radius: $border_radius_buttons_square;
+}
