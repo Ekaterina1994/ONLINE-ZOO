@@ -89,10 +89,17 @@ h1 {
 
 .promo {
   position: relative;
-  background-image: url(../../assets/images/panda-seconf-bg.jpg);
-  background-size: cover;
-  z-index: 1;
-  height: 390px;
+  display: flex;
+  /* background-image: url(../../assets/images/panda-seconf-bg.jpg); */
+  background: #000;
+  /* background-size: cover; */
+}
+
+.promo-img {
+  display: flex;
+  max-width: 1600px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .button {
