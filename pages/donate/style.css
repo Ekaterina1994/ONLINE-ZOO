@@ -35,6 +35,10 @@ h1 {
   fill: #fff;
 }
 
+.logo-footer {
+  padding: 0;
+}
+
 .navigation {
   display: flex;
   gap: 58px;
@@ -143,7 +147,7 @@ h2 {
 }
 
 .pick-and-feed {
-  padding: 69px 0 100px;
+  padding: 40px 0 180px;
   background: linear-gradient(
       315.75deg,
       rgba(254, 210, 144, 0.7) 30.06%,
@@ -172,7 +176,7 @@ h2 {
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  padding: 40px 0 62px;
+  padding: 45px 0 62px;
   display: flex;
   flex-direction: column;
 }
@@ -187,7 +191,7 @@ h2 {
   font-size: 3rem;
   line-height: 120%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .pick-and-feed__description-about {
@@ -341,7 +345,7 @@ h2 {
   background: #404950;
   border-radius: 2px;
   border: 1px solid transparent;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .line-input {
@@ -502,7 +506,7 @@ h2 {
 
 .inputfield {
   background: transparent;
-  width: 228px;
+  max-width: 230px;
   border-radius: 5px;
   border: 1px solid #f9804b;
   background-origin: border-box;
@@ -517,18 +521,18 @@ h2 {
 }
 
 .inputfield:invalid {
-  border: 1px solid #D31414;
+  border: 1px solid #d31414;
   outline: none;
 }
 
 .inputfield:focus ~ .submit {
-  border-color: #4b9200;
-	color: #4b9200;
+  border-color: #bdbdbd;
+  color: black;
 }
 
 .inputfield:invalid ~ .submit {
-  border: 1px solid #D31414;
-  color: #D31414;
+  border: 1px solid #d31414;
+  color: #d31414;
 }
 
 .inputfield::placeholder {
@@ -536,7 +540,7 @@ h2 {
 }
 
 .donation-information {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .donation-information__big-title {
@@ -545,7 +549,7 @@ h2 {
   line-height: 130%;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .donation-information__description {
@@ -553,7 +557,8 @@ h2 {
   font-size: 1rem;
   line-height: 140%;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-top: 5px;
+  margin-bottom: 45px;
 }
 
 .donation-information__title {
@@ -593,7 +598,7 @@ h2 {
   margin: 0;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -709,4 +714,53 @@ input[type='number'] {
 
 .radiobutton-item label:hover:before {
   filter: brightness(120%);
+}
+
+.numbers {
+  font-size: 16px;
+  height: 100px;
+}
+
+.container-numbers:after {
+  position: absolute;
+  color: #777;
+  content: "$5000 $2000 $1000";
+  padding: 40px 0;
+  word-spacing: 60px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  /* or 36px */
+
+  text-transform: uppercase;
+}
+
+.container-numbers:after::after {
+  position: absolute;
+  color: #777;
+  content: "$5000 $2000 $1000 $500 $250 $100 $50 $25";
+  padding: 40px 0;
+  word-spacing: 60px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  /* or 36px */
+
+  text-transform: uppercase;
+}
+
+.container-numbers {
+  padding: 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  width: 975px;
+  height: 100px;
 }
