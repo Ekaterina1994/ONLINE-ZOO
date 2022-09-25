@@ -35,6 +35,10 @@ h1 {
   fill: #fff;
 }
 
+.logo-footer {
+  padding: 0;
+}
+
 .navigation {
   display: flex;
   gap: 58px;
@@ -221,7 +225,7 @@ h2 {
 }
 
 .zoos {
-  margin-top: 180px;
+  margin-top: 175px;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -269,7 +273,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
 }
 
 .animals__cards-item {
@@ -342,6 +346,8 @@ h2 {
 .animals__cards-item:hover .animals__card-name {
   color: white;
 }
+
+
 
 .palm {
   position: absolute;
@@ -662,7 +668,7 @@ h2 {
 }
 
 .button-square {
-  margin: 68px 0 44px;
+  margin: 62px 0 44px;
   border-radius: 5px;
   margin-right: 69px;
 }
@@ -797,7 +803,7 @@ h2 {
 
 .inputfield {
   background: transparent;
-  width: 228px;
+  max-width: 230px;
   border-radius: 5px;
   border: 1px solid #f9804b;
   background-origin: border-box;
@@ -811,14 +817,18 @@ h2 {
   outline: none;
 }
 
+.inputfield:valid {
+  border: 1px solid #4b9200;
+}
+
 .inputfield:invalid {
   border: 1px solid #D31414;
   outline: none;
 }
 
 .inputfield:focus ~ .submit {
-  border-color: #4b9200;
-	color: #4b9200;
+  border-color: #BDBDBD;
+	color: black;
 }
 
 .inputfield:invalid ~ .submit {
@@ -828,6 +838,11 @@ h2 {
 
 .inputfield::placeholder {
   color: #BDBDBD;
+}
+
+.submit:default {
+	border-color: #4b9200;
+	color: #4b9200;
 }
 
 .support-link {
