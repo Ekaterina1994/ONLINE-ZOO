@@ -591,6 +591,10 @@ h2 {
   padding: 0 10px;
 }
 
+.another-amount:invalid {
+  border: 1px solid #D31414;
+}
+
 .another-amount::-webkit-outer-spin-button,
 .another-amount::-webkit-inner-spin-button {
   display: none;
