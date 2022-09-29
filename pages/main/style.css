@@ -817,9 +817,9 @@ h2 {
   outline: none;
 }
 
-.inputfield:valid {
+/* .inputfield:valid {
   border: 1px solid #4b9200;
-}
+} */
 
 .inputfield:invalid {
   border: 1px solid #D31414;
@@ -840,10 +840,10 @@ h2 {
   color: #BDBDBD;
 }
 
-.submit:default {
+/* .submit:default {
 	border-color: #4b9200;
 	color: #4b9200;
-}
+} */
 
 .support-link {
 	border-bottom: 1px solid #FE9013;
