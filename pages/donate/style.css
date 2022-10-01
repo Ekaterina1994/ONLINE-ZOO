@@ -367,6 +367,7 @@ h2 {
 .footer-wrap {
   padding: 41px 0 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -374,6 +375,11 @@ h2 {
   margin: 68px 0 44px;
   border-radius: 5px;
   margin-right: 69px;
+}
+
+.social-auth {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-links {
@@ -386,6 +392,10 @@ h2 {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.link-foo {
+  font-weight: 400;
 }
 
 .social-icon {
@@ -442,11 +452,11 @@ h2 {
   display: flex;
   align-items: flex-end;
   padding: 0;
+  margin-left: 120px;
 }
 
 .subscribe {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -635,7 +645,7 @@ input[type="number"] {
   fill: #929699;
 }
 
-.another-amount:focus ~ .dollar path {
+.another-amount:focus ~ .dollar {
   fill: #4b9200;
 }
 
