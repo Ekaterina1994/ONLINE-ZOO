@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../../../../EmptyFolder/my-app"
+		},
+		{
+			"path": "../../../../quiz"
+		},
+		{
+			"path": "../../../../veretennikovva/repositories/repositories/training/trainingtask"
+		},
+		{
+			"path": "../../../rsschool-cv"
+		},
+		{
+			"path": "../../../../the-way-of-great-men/the-way-of-great-men"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../ekaterina1994-JSFEPRESCHOOL/portfolio"
+		},
+		{
+			"path": "../../../../interview-test-teri"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ONLINE-ZOO"
+	}
+}

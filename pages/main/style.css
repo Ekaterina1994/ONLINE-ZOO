@@ -940,10 +940,6 @@ h2 {
     margin-right: 0;
   }
 
-  .subscribe {
-    margin-left: 88px;
-  }
-
   .footer__navigation {
    display: flex;
    justify-content: end;
