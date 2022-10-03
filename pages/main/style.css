@@ -43,6 +43,10 @@ h1 {
   padding: 0;
 }
 
+.logo-footer-mini {
+  display: none;
+}
+
 .navigation {
   display: flex;
   gap: 58px;
@@ -232,7 +236,8 @@ h2 {
   top: 792px;
 }
 
-.flower2 {
+.flower2,
+.flower3 {
   display: none;
 }
 
@@ -374,6 +379,11 @@ h2 {
   right: 0;
   bottom: 0;
 }
+
+.strelitzia-mini {
+  display: none;
+}
+
 .pick-and-feed {
   padding: 69px 0 100px;
   background: linear-gradient(
@@ -938,7 +948,7 @@ h2 {
   }
 
   .pick-and-feed__minititle {
-    max-width: 900px;
+    max-width: 99%;
   }
 
   .testimonials__cards {
@@ -1041,6 +1051,10 @@ h2 {
     margin-bottom: 47px;
   }
 
+  .button-promo-mini {
+    display: none;
+  }
+
   .bamboo {
     margin-top: 20px;
   }
@@ -1097,7 +1111,7 @@ h2 {
   .pick-and-feed__minititle,
   .pick-and-feed__description-text {
     padding-left: 49px;
-    width: 800px;
+    width: 99%px;
   }
 
   .pick-and-feed__description-text {
@@ -1177,7 +1191,7 @@ h2 {
 
   .pick-and-feed__minititle {
     padding-left: 20px;
-    max-width: 700px;
+    max-width: 99%;
   }
 
   .pick-and-feed__description-about {
@@ -1186,7 +1200,7 @@ h2 {
 
   .pick-and-feed__description-text {
     padding-left: 20px;
-    max-width: 700px;
+    max-width: 99%;
   }
 }
 
@@ -1258,11 +1272,11 @@ h2 {
   }
 
   .pick-and-feed__minititle {
-    max-width: 600px;
+    max-width: 99%;
   }
 
   .pick-and-feed__description-text {
-    max-width: 600px;
+    max-width: 99%;
   }
 
   .pick-wrap {
@@ -1314,7 +1328,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    min-width: 600px;
+    min-width: 94%;
     margin: 0 20px;
   }
 
@@ -1545,13 +1559,12 @@ h2 {
     height: 10px;
   }
 
-
   .header__burger:hover {
     cursor: pointer;
   }
 
   .header__burger span {
-    background-color: #FFF;
+    background-color: #fff;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -1562,7 +1575,7 @@ h2 {
   .header__burger::before,
   .header__burger::after {
     content: "";
-    background-color: #FFF;
+    background-color: #fff;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -1580,5 +1593,310 @@ h2 {
 
   .navigation-foo {
     gap: 37px;
+  }
+}
+
+@media (max-width: 615px) {
+  .bamboo__description {
+    max-width: 80%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .animals__cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .animals {
+    justify-content: center;
+  }
+
+  .animals__cards-item:hover .animals__card-description {
+    display: flex;
+    min-height: 332px;
+  }
+
+  .helpers-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .helpers-cards__item {
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .green-arrow {
+    transform: rotate(90deg);
+    top: 190px;
+    left: 350px;
+  }
+
+  .green-arrow-last {
+    transform: rotate(90deg);
+    top: 435px;
+  }
+
+  .testimonials__cards-item {
+    width: 100%;
+  }
+
+  .social-auth {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .subscribe {
+    justify-content: end;
+  }
+
+  .footer__navigation {
+    justify-content: center;
+  }
+
+  .subscribe-mini {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .promo-wrapper {
+    width: 80%;
+  }
+
+  .button-promo {
+    margin: 0 auto 40px;
+  }
+
+  .title {
+    margin-bottom: 43px;
+    font-size: 1.75rem;
+    width: 128px;
+    margin-top: -100px;
+  }
+
+  .circle {
+    width: 119px;
+    height: 119px;
+    margin-top: 50px;
+    right: 27px;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .green-arrow,
+  .green-arrow-last {
+    left: 240px;
+  }
+
+  .leav {
+    width: 13%;
+    height: 13%;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .promo-wrapper {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-wrap {
+    margin: 0 10px;
+  }
+
+  .circle {
+    margin-top: 70px;
+  }
+
+  .button-promo {
+    display: none;
+  }
+
+  .bamboo {
+    margin: 0 10px;
+  }
+
+  .button-promo-mini {
+    display: block;
+    margin: 0 0 30px;
+  }
+
+  .bamboo__description {
+    max-width: 100%;
+  }
+
+  .flower2 {
+    display: none;
+  }
+
+  .flower3 {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 290px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .bamboo__description-text {
+    margin-bottom: 20px;
+  }
+
+  .bamboo__description-title {
+    margin-bottom: 10px;
+  }
+
+  .zoos {
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .strelitzia {
+    display: none;
+  }
+
+  .strelitzia-mini {
+    width: 85px;
+    height: 71px;
+    right: -20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .palm-little {
+    left: -15px;
+    width: 85px;
+    height: 71px;
+  }
+
+  .choose {
+    margin-bottom: 60px;
+  }
+
+  .pick-and-feed {
+    padding: 20px 10px;
+  }
+
+  .pick-wrap {
+    padding: 20px 0 0;
+  }
+
+  .orange-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .pick-and-feed__description-about {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .pick-and-feed__minititle,
+  .pick-and-feed__description-text {
+    display: none;
+  }
+
+  .how-it-works {
+    font-size: 1.5rem;
+  }
+
+  .helpers-cards {
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .green-arrow,
+  .green-arrow-last {
+    left: 205px;
+    transform: rotate(83deg);
+  }
+
+  .green-arrow {
+    top: 180px;
+  }
+
+  .green-arrow-last {
+    top: 415px;
+  }
+
+  .helpers-cards__item {
+    margin-top: -10px;
+  }
+
+  .button-feed {
+    margin-bottom: 40px;
+  }
+
+  .testimonials {
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .testimonials__title {
+    margin-bottom: 20px;
+  }
+
+  .testimonails__block {
+    margin-bottom: 30px;
+  }
+
+  .button-feedback {
+    width: 240px;
+  }
+
+  .leav {
+    width: 10%;
+    height: 10%;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .logo-footer-mini {
+    display: block;
+    margin: 0 auto 86px;
+  }
+
+  .subscribe-mini {
+    margin: 0 auto;
+  }
+
+  .social-links {
+    top: 70px;
+    right: 63px;
+    gap: 30px;
+  }
+
+  .footer-wrap {
+    margin: 20px 10px;
+  }
+
+  .button-square {
+    margin: 0 0 30px;
+  }
+
+  .social-auth {
+    gap: 30px;
+  }
+
+  .navigation-foo {
+    gap: 30px;
   }
 }
