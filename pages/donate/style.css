@@ -43,6 +43,10 @@ h1 {
   padding: 0;
 }
 
+.logo-footer-mini {
+  display: none;
+}
+
 .navigation {
   display: flex;
   gap: 58px;
@@ -1268,8 +1272,6 @@ input[type="number"] {
     padding: 30px 0;
   }
 
-
-
   .pick-and-feed__description {
     margin-left: 20px;
     margin-right: 20px;
@@ -1385,5 +1387,207 @@ input[type="number"] {
 
   .navigation-foo {
     gap: 37px;
+  }
+}
+
+@media (max-width: 639px) {
+  .donate-line-block {
+    max-width: 100%;
+  }
+
+  .line {
+    width: 300px;
+    padding: 0;
+  }
+
+  .grey-line {
+    width: 270px;
+    left: 15px;
+  }
+
+  .one {
+    left: 15px;
+  }
+
+  .two {
+    left: 81px;
+  }
+
+  .three {
+    left: 145px;
+  }
+  .four {
+    left: 210px;
+  }
+
+  .five {
+    left: 275px;
+  }
+
+  .money-line {
+    width: 340px;
+    margin: 0 auto 25px;
+  }
+
+  .money-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 615px) {
+  .social-auth {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .subscribe {
+    justify-content: end;
+  }
+
+  .footer__navigation {
+    justify-content: center;
+  }
+
+  .subscribe-mini {
+    justify-content: flex-start;
+  }
+
+  .dollar {
+    margin-left: 0;
+    right: 440px;
+  }
+}
+
+@media (max-width: 580px) {
+  .pick__donate-animals {
+    gap: 30px;
+  }
+
+  .pick__donate-animals img {
+    width: 160px;
+    height: 138px;
+  }
+
+  .icon-multiply img {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 460px) {
+  .money-line {
+    width: 300px;
+  }
+
+  .promo-donate {
+    height: 187px;
+  }
+
+  .promo-img {
+    min-width: 766px;
+    margin-left: -45%;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 340px) {
+  .header-wrap {
+    margin: 0 10px;
+  }
+
+  .promo-donate {
+    height: 187px;
+  }
+
+  .promo-img {
+    min-width: 766px;
+    margin-left: -45%;
+  }
+
+  .donation-information {
+    margin: 0 10px;
+  }
+
+  .donation-information__title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .line {
+    width: 297px;
+  }
+
+  .pick-wrap {
+    margin: 0 10px;
+    padding: 20px 0 30px;
+  }
+
+  .pick-and-feed__description-about {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .pick__donate-animals {
+    gap: 31px;
+  }
+
+  .pick__donate-number-description {
+    font-size: 9px;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .logo-footer-mini {
+    display: block;
+    margin: 0 auto 86px;
+  }
+
+  .subscribe-mini {
+    margin: 0 auto;
+  }
+
+  .social-links {
+    top: 70px;
+    right: 63px;
+    gap: 30px;
+  }
+
+  .footer-wrap {
+    margin: 20px 10px;
+  }
+
+  .button-square {
+    margin: 0 auto 30px;
+  }
+
+  .social-auth {
+    gap: 30px;
+  }
+
+  .navigation-foo {
+    gap: 30px;
+  }
+
+  .amount {
+    margin-bottom: 15px;
+  }
+
+  .another-amount {
+    margin-bottom: 15px;
+  }
+
+  .button-feed {
+    margin-bottom: 30px;
+  }
+
+  .pick-and-feed__text {
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 }
