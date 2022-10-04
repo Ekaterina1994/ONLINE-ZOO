@@ -21,6 +21,9 @@
             <svg class="logo">
               <use xlink:href="../../assets/icons/sprite.svg#logo"></use>
             </svg>
+            <svg class="logo2">
+              <use xlink:href="../../assets/icons/sprite.svg#logo2"></use>
+            </svg>
           </a>
           <nav class="header__navigation">
             <ul class="navigation">
@@ -51,6 +54,7 @@
             >Designed by &#169;</a
           >
         </div>
+        <div class="header__burger"><span></span></div>
       </div>
     </header>
     <main class="main">
@@ -110,6 +114,22 @@
                   type="range"
                   min="1"
                   max="8"
+                  value="3"
+                  step="1"
+                />
+                <input
+                  class="line-input line-input-little"
+                  type="range"
+                  min="1"
+                  max="7"
+                  value="3"
+                  step="1"
+                />
+                <input
+                  class="line-input line-input-little-600"
+                  type="range"
+                  min="1"
+                  max="5"
                   value="3"
                   step="1"
                 />
@@ -181,17 +201,32 @@
     </main>
     <footer class="footer">
       <div class="wrapper footer-wrap">
-        <div class="contacts">
+        <div class="subscribe subscribe-mini">
           <a href="../main/index.html">
             <svg class="logo logo-footer">
               <use xlink:href="../../assets/icons/sprite.svg#logo"></use>
             </svg>
+            <img class="logo-footer-mini" src="../../assets/images/logo-footer-mini.png" />
           </a>
-          <a href="../donate/index.html"
-            ><button class="button button-square">
-              Donate for volunteers
-            </button></a
-          >
+          <div class="subscribe__field">
+            <div class="subscribe__title">Subscribe to our news</div>
+            <form class="form">
+              <input
+                class="inputfield"
+                type="email"
+                name="input"
+                placeholder="Enter your email"
+              />
+              <button class="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <a href="../donate/index.html"
+          ><button class="button button-square">
+            Donate for volunteers
+          </button></a
+        >
+        <div class="social-auth">
           <div class="social-links">
             <div class="social-links__item">
               <button class="social-icon">
@@ -230,40 +265,31 @@
               <p class="social-links__item-title">Youtube</p>
             </div>
           </div>
-        </div>
-        <div class="footer__navigation">
-          <ul class="navigation navigation-foo">
-            <li class="navigation__item">
-              <a class="navigation__link" href="../main/index.html">About</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Map</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Zoos</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Contact us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscribe">
-          <div class="subscribe__field">
-            <div class="subscribe__title">Subscribe to our news</div>
-            <form class="form" action="">
-              <input
-                class="inputfield"
-                type="email"
-                name="input"
-                placeholder="Enter your email"
-                
-              />
-              <button class="submit">Submit</button>
-            </form>
+          <div class="footer__navigation">
+            <ul class="navigation navigation-foo">
+              <li class="navigation__item">
+                <a class="navigation__link link-foo" href="../main/index.html"
+                  >About</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-foo" href="#">Map</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-foo" href="#">Zoos</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-foo" href="#">Contact us</a>
+              </li>
+            </ul>
           </div>
-          <div class="subscribe__auth">
-            <p class="subscribe__auth-name">Designed by Alisa Samborskaya</p>
-            <p class="subscribe__auth-rights">©RSSchool & ©Yem Digital 2021</p>
+          <div class="subscribe">
+            <div class="subscribe__auth">
+              <p class="subscribe__auth-name">Designed by Alisa Samborskaya</p>
+              <p class="subscribe__auth-rights">
+                ©RSSchool & ©Yem Digital 2021
+              </p>
+            </div>
           </div>
         </div>
       </div>

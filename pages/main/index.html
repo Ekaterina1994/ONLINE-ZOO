@@ -21,6 +21,9 @@
             <svg class="logo">
               <use xlink:href="../../assets/icons/sprite.svg#logo"></use>
             </svg>
+            <svg class="logo2">
+              <use xlink:href="../../assets/icons/sprite.svg#logo2"></use>
+            </svg>
           </a>
           <nav class="header__navigation">
             <ul class="navigation">
@@ -53,6 +56,7 @@
             >Designed by &#169;</a
           >
         </div>
+        <div class="header__burger"><span></span></div>
       </div>
     </header>
 
@@ -72,26 +76,31 @@
       <!-- <div class="promo-bg"> -->
       <section class="promo">
         <div class="promo-bg">
-        <div class="wrapper promo-wrap">
-          <div class="promo-wrapper">
-            <span class="circle"></span>
-            <div class="title">
-              Watch your <span class="title-yellow"> favorite </span> animal
-              online
+          <div class="wrapper promo-wrap">
+            <div class="promo-wrapper">
+              <span class="circle"></span>
+              <div class="title">
+                Watch your <span class="title-yellow"> favorite </span> animal
+                online
+              </div>
+              <button class="button button-promo">Watch online</button>
             </div>
-            <button class="button button-promo">Watch online</button>
           </div>
         </div>
-      </div>
       </section>
       <!-- </div> -->
       <div class="wrapper">
-        <img class="flower" src="../../assets/images/flower_foto1.png" />
+        <div class="flower-wrap">
+          <img class="flower" src="../../assets/images/flower_foto1.png" />
+          <img class="flower2" src="../../assets/images/flower2.png" />
+          <img class="flower3" src="../../assets/images/flower3.png" />
+        </div>
         <section class="bamboo">
           <div class="bamboo__image">
             <img src="../../assets/images/bamboo.jpg" />
           </div>
           <div class="bamboo__description">
+            <button class="button button-promo button-promo-mini">Watch online</button>
             <h2>The Backstage of the Wilderness World</h2>
             <p class="bamboo__description-text">
               The site was founded on the basis of a volunteer movement to
@@ -111,10 +120,12 @@
       <div class="flowers">
         <div class="wrapper-animals">
           <img class="palm" src="../../assets/images/palm.png" />
+          <img class="palm-little" src="../../assets/images/palm-little.png" />
           <img class="strelitzia" src="../../assets/images/strelitzia.png" />
+          <img class="strelitzia-mini" src="../../assets/images/strelitzia-mini.png" />
           <section class="zoos">
             <div class="animals">
-              <button class="arrow">
+              <button class="arrow arrow-left">
                 <svg class="icon">
                   <use
                     xlink:href="../../assets/icons/sprite.svg#arrow-left"
@@ -124,7 +135,10 @@
               <div class="animals__cards">
                 <div class="animals__cards-item">
                   <div class="animals__card-image">
-                    <img src="../../assets/images/pandas.jpg" />
+                    <img
+                      class="animals__card-image-scale"
+                      src="../../assets/images/pandas.jpg"
+                    />
                   </div>
                   <div class="animals__card-description">
                     <div class="animals__card-text">
@@ -142,7 +156,10 @@
                 </div>
                 <div class="animals__cards-item">
                   <div class="animals__card-image">
-                    <img src="../../assets/images/eagles.jpg" />
+                    <img
+                      class="animals__card-image-scale"
+                      src="../../assets/images/eagles.jpg"
+                    />
                   </div>
                   <div class="animals__card-description">
                     <div class="animals__card-text">
@@ -158,7 +175,10 @@
                 </div>
                 <div class="animals__cards-item">
                   <div class="animals__card-image">
-                    <img src="../../assets/images/gorillas.jpg" />
+                    <img
+                      class="animals__card-image-scale"
+                      src="../../assets/images/gorillas.jpg"
+                    />
                   </div>
                   <div class="animals__card-description">
                     <div class="animals__card-text">
@@ -174,7 +194,10 @@
                 </div>
                 <div class="animals__cards-item">
                   <div class="animals__card-image">
-                    <img src="../../assets/images/sloth.jpg" />
+                    <img
+                      class="animals__card-image-scale"
+                      src="../../assets/images/sloth.jpg"
+                    />
                   </div>
                   <div class="animals__card-description">
                     <div class="animals__card-text">
@@ -192,7 +215,10 @@
                 </div>
                 <div class="animals__cards-item">
                   <div class="animals__card-image">
-                    <img src="../../assets/images/cheetahs.jpg" />
+                    <img
+                      class="animals__card-image-scale"
+                      src="../../assets/images/cheetahs.jpg"
+                    />
                   </div>
                   <div class="animals__card-description">
                     <div class="animals__card-text">
@@ -208,7 +234,10 @@
                 </div>
                 <div class="animals__cards-item">
                   <div class="animals__card-image">
-                    <img src="../../assets/images/penguins.jpg" />
+                    <img
+                      class="animals__card-image-scale"
+                      src="../../assets/images/penguins.jpg"
+                    />
                   </div>
                   <div class="animals__card-description">
                     <div class="animals__card-text">
@@ -223,7 +252,7 @@
                   </div>
                 </div>
               </div>
-              <button class="arrow">
+              <button class="arrow arrow-right">
                 <svg class="icon">
                   <use
                     xlink:href="../../assets/icons/sprite.svg#arrow-right"
@@ -275,6 +304,9 @@
                   ></use>
                 </svg>
               </div>
+              <div class="green-arrow">
+                <img src="../../assets/images/arrow-green.png" />
+              </div>
               <div class="helpers-cards__item">
                 <div class="helpers-card__image">
                   <svg class="icon-zoo">
@@ -289,6 +321,9 @@
                     xlink:href="../../assets/icons/sprite.svg#big-arrow"
                   ></use>
                 </svg>
+              </div>
+              <div class="green-arrow-last">
+                <img src="../../assets/images/arrow-green.png" />
               </div>
               <div class="helpers-cards__item">
                 <div class="helpers-card__image">
@@ -463,17 +498,34 @@
     </main>
     <footer class="footer">
       <div class="wrapper footer-wrap">
-        <div class="contacts">
+        <div class="subscribe subscribe-mini">
           <a href="../main/index.html">
             <svg class="logo logo-footer">
               <use xlink:href="../../assets/icons/sprite.svg#logo"></use>
             </svg>
+            <img class="logo-footer-mini" src="../../assets/images/logo-footer-mini.png" />
           </a>
-          <a href="../donate/index.html"
-            ><button class="button button-square">
-              Donate for volunteers
-            </button></a
-          >
+          <div class="subscribe__field">
+            <div class="subscribe__title">Subscribe to our news</div>
+            <form class="form">
+              <input
+                class="inputfield"
+                type="email"
+                name="input"
+                placeholder="Enter your email"
+              />
+              <button class="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <a href="../donate/index.html"
+          ><button class="button button-square">
+            Donate for volunteers
+          </button></a
+        >
+
+        <div class="social-auth">
           <div class="social-links">
             <div class="social-links__item">
               <button class="social-icon">
@@ -512,42 +564,33 @@
               <p class="social-links__item-title">Youtube</p>
             </div>
           </div>
-        </div>
-        <div class="footer__navigation">
-          <ul class="navigation navigation-foo">
-            <li class="navigation__item">
-              <a class="navigation__link active" href="../main/index.html"
-                >About</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Map</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Zoos</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Contact us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscribe">
-          <div class="subscribe__field">
-            <div class="subscribe__title">Subscribe to our news</div>
-            <form class="form">
-              <input
-                class="inputfield"
-                type="email"
-                name="input"
-                placeholder="Enter your email"
-               
-              />
-              <button class="submit">Submit</button>
-            </form>
+          <div class="footer__navigation">
+            <ul class="navigation navigation-foo">
+              <li class="navigation__item">
+                <a
+                  class="navigation__link active link-foo"
+                  href="../main/index.html"
+                  >About</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-foo" href="#">Map</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-foo" href="#">Zoos</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link-foo" href="#">Contact us</a>
+              </li>
+            </ul>
           </div>
-          <div class="subscribe__auth">
-            <p class="subscribe__auth-name">Designed by Alisa Samborskaya</p>
-            <p class="subscribe__auth-rights">©RSSchool & ©Yem Digital 2021</p>
+          <div class="subscribe">
+            <div class="subscribe__auth">
+              <p class="subscribe__auth-name">Designed by Alisa Samborskaya</p>
+              <p class="subscribe__auth-rights">
+                ©RSSchool & ©Yem Digital 2021
+              </p>
+            </div>
           </div>
         </div>
       </div>
