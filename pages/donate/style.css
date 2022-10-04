@@ -1026,7 +1026,7 @@ input[type="number"] {
   }
 
   .pick-wrap {
-    padding: 30px 0 45px;
+    padding: 20px 0 45px;
   }
 
   .orange-title {
@@ -1045,6 +1045,36 @@ input[type="number"] {
 
   .line {
     margin-bottom: 10px;
+  }
+
+  .pick__donate-number-item {
+    gap: 0;
+  }
+
+  .donate-line__title {
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .money-line {
+    padding-left: 25px;
+  }
+
+  .another-amount {
+    margin-top: 30px;
+    width: 250px;
+  }
+
+  .amount {
+    margin-bottom: 30px;
+  }
+
+  .dollar {
+    top: 8px;
+  }
+
+  .subscribe__field {
+    margin-right: 35px;
   }
 }
 
@@ -1217,11 +1247,21 @@ input[type="number"] {
   .navigation-foo {
     gap: 8px;
   }
+
+  .money-line {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 640px) {
   .header {
+    position: fixed;
+    width: 100%;
     height: 34px;
+  }
+
+  .promo {
+    margin-top: 34px;
   }
 
   .header__navigation,
@@ -1251,7 +1291,8 @@ input[type="number"] {
 
   .promo-img {
     width: 1373px;
-    margin-left: -50%;
+    margin-left: -60%;
+    /* transform: scale(0.85); */
   }
 
   .donation-information__big-title {
@@ -1307,6 +1348,7 @@ input[type="number"] {
 
   .dollar {
     left: 105px;
+    top: 8px;
   }
 
   .button-feed {
@@ -1581,6 +1623,10 @@ input[type="number"] {
 
   .pick__donate-number-description {
     font-size: 9px;
+  }
+
+  .dollar {
+    top: 12px;
   }
 
   .logo-footer {
