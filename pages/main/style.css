@@ -1068,11 +1068,16 @@ h2 {
     margin-left: -80px;
   }
 
+  .bamboo__text {
+    letter-spacing: 0.1px;
+  }
+
   .zoos {
     margin-top: 140px;
   }
 
   .choose {
+    margin-top: 6px;
     margin-bottom: 140px;
   }
 
@@ -1111,7 +1116,7 @@ h2 {
   .pick-and-feed__minititle,
   .pick-and-feed__description-text {
     padding-left: 49px;
-    width: 99%px;
+    width: 90%;
   }
 
   .pick-and-feed__description-text {
@@ -1128,6 +1133,10 @@ h2 {
     padding-bottom: 140px;
   }
 
+  .testimonails__block {
+    margin-bottom: 16px;
+  }
+
   .testimonials__title {
     margin-bottom: 30px;
   }
@@ -1136,8 +1145,26 @@ h2 {
     width: 293px;
   }
 
+  .testimonials__cards-item-bottom {
+    padding-top: 7px;
+  }
+
   .line {
     margin-bottom: 52px;
+    width: 390px;
+  }
+
+  .line[type="range"] {
+    width: 390px;
+  }
+
+  .line[type="range"]::-webkit-slider-thumb {
+    width: 75px;
+  }
+
+  .leav {
+    width: 115px;
+    height: 218px;
   }
 
   .button-feedback {
@@ -1296,6 +1323,7 @@ h2 {
 
 @media (max-width: 640px) {
   .header {
+    position: sticky;
     height: 34px;
   }
 
@@ -1341,7 +1369,7 @@ h2 {
 
   .button-promo {
     margin-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .title {
@@ -1361,9 +1389,13 @@ h2 {
   }
 
   .bamboo {
-    margin-top: 0;
+    margin-top: 20px;
     margin-left: 20px;
     align-items: flex-start;
+  }
+
+  h2 {
+    letter-spacing: 0.2px;
   }
 
   .bamboo__image {
@@ -1375,11 +1407,15 @@ h2 {
   }
 
   .bamboo__description-text {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .bamboo__description-title {
     margin-bottom: 20px;
+  }
+
+  .bamboo__text {
+    letter-spacing: 0.01px;
   }
 
   .zoos {
@@ -1391,6 +1427,15 @@ h2 {
     margin: 0 20px;
   }
 
+  .animals__card-image {
+    max-height: 282px;
+  }
+
+  .animals__card-description {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .arrow-left {
     transform: translate(-77px, 0);
   }
@@ -1400,6 +1445,7 @@ h2 {
   }
 
   .choose {
+    margin-top: 10px;
     margin-bottom: 100px;
   }
 
@@ -1443,7 +1489,7 @@ h2 {
 
   .pick-and-feed__description-text {
     padding-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .how-it-works {
@@ -1455,7 +1501,7 @@ h2 {
   }
 
   .button-feed {
-    margin-bottom: 60px;
+    margin-bottom: 47px;
   }
 
   .testimonials {
@@ -1465,12 +1511,12 @@ h2 {
   .testimonials__cards {
     margin: 0 20px;
     flex-direction: column;
-    gap: 15px;
+    gap: 13px;
   }
 
   .testimonials__cards-item {
     width: 100%;
-    max-height: 109px;
+    max-height: 107px;
   }
 
   .testimonials__cards-item-top {
@@ -1504,6 +1550,7 @@ h2 {
 
   .button-feedback {
     margin: 0 auto;
+    width: 240px;
   }
 
   .testimonials {
