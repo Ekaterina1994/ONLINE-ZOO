@@ -191,6 +191,10 @@ h1 {
   background: #4b9200;
 }
 
+.button-promo-mini {
+  display: none;
+}
+
 .footer {
   background-color: #000;
   flex: 0 0 auto;
