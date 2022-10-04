@@ -1485,6 +1485,7 @@ h2 {
   .pick-and-feed__minititle {
     margin-bottom: 10px;
     padding-left: 0;
+
   }
 
   .pick-and-feed__description-text {
@@ -1777,7 +1778,7 @@ h2 {
 
   .button-promo-mini {
     display: block;
-    margin: 0 0 30px;
+    margin: -20px 0 30px;
   }
 
   .bamboo__description {

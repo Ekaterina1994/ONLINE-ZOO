@@ -1512,9 +1512,26 @@ input[type="number"] {
     margin: 0 10px;
   }
 
+  .orange-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
   .donation-information__title {
     font-size: 1.5rem;
     margin-bottom: 30px;
+  }
+
+  .donation-information__description {
+    margin-bottom: 25px;
+  }
+
+  .pick-and-feed__description {
+    margin: 0;
+  }
+
+  .pick-and-feed__description-about {
+    font-size: 1rem;
   }
 
   .line {
@@ -1528,11 +1545,38 @@ input[type="number"] {
 
   .pick-and-feed__description-about {
     padding: 0;
-    margin: 10px;
+    margin: 0 0 15px;
   }
 
   .pick__donate-animals {
     gap: 31px;
+    margin-bottom: 5px;
+  }
+
+  .pick__donate-number {
+    font-size: 40px;
+  }
+
+  .pick__donate-number-item {
+    gap: 1px;
+  }
+
+  .donate-line__title {
+    margin-bottom: 4px;
+  }
+
+  .line {
+    height: 20px;
+    margin-bottom: 0;
+  }
+
+  .circle-yellow {
+    width: 5px;
+    height: 5px;
+  }
+
+  .pick-and-feed__text {
+    margin-bottom: 0;
   }
 
   .pick__donate-number-description {
@@ -1588,6 +1632,14 @@ input[type="number"] {
 
   .pick-and-feed__text {
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .pick-wrap {
+    padding-bottom: 20px;
+  }
+
+  .pick-and-feed {
+    padding-bottom: 20px;
   }
 }
