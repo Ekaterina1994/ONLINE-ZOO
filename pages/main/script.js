@@ -1,14 +1,18 @@
-console.log(123);
-
 const iconMenu = document.querySelector(".header__burger");
+const menuBody = document.querySelector(".header-wrap");
 
 if (iconMenu) {
-  const menuBody = document.querySelector(".header__navigation");
-  iconMenu.addEventListener("click", function (e)
-  {
+  iconMenu.addEventListener("click", function (e) {
     document.body.classList.toggle("_lock");
     iconMenu.classList.toggle("_active");
     menuBody.classList.toggle("_active");
-  })
+  });
 }
 
+menuBody.addEventListener("click", function (e) {
+  if (iconMenu.classList.contains("_active")) {
+    document.body.classList.remove("_lock");
+    iconMenu.classList.remove("_active");
+    menuBody.classList.remove("_active");
+  }
+});

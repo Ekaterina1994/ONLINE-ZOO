@@ -1389,10 +1389,21 @@ input[type="number"] {
   }
 
   .header__burger {
+    z-index: 5;
     display: block;
-    position: relative;
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
     width: 18px;
     height: 10px;
+  }
+
+  .logo2 {
+  position: absolute;
+  top: 0;
+  left: calc(-100% + 10px);
+  z-index: 10;
+  fill:white;
   }
 
   .header__burger:hover {
@@ -1406,6 +1417,61 @@ input[type="number"] {
     height: 2px;
     right: 0;
     top: 4px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header-wrap {
+    box-sizing: border-box;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    margin: 0;
+    transform: translate(100%, 0);
+    background-color: #FFF;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-wrap._active {
+    transform: translate(0, 0);
+  }
+
+  .header__burger:hover {
+    cursor: pointer;
+  }
+
+  .header__burger span {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 4px;
+    transition: all 0.3s ease 0s;
   }
 
   .header__burger::before,
@@ -1425,6 +1491,57 @@ input[type="number"] {
 
   .header__burger::after {
     bottom: 0;
+  }
+
+  .navigation__item {
+    gap: 15px;
+  }
+
+  .navigation__link {
+    color: #000;
+  }
+
+  .header__burger._active span {
+    background-color: transparent;
+  }
+  .header__burger._active::before {
+    top: 50%;
+    background-color: #000;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  .header__burger._active::after {
+    bottom: 50%;
+    background-color: #000;
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
+  .header-wrap._active .header__navigation {
+    display: flex;
+    padding: 10px;
+    margin-top: 62px;
+  }
+
+  .header-wrap._active .auth__link {
+    display: flex;
+    padding: 10px;
+    color: black;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .header-wrap._active .logo2 {
+    left: 10px;
+    top: 10px;
+    fill: #FE9013;
+    border: 1px solid #FE9013;
+    border-radius: 2px;
+    /* stroke:white;
+    stroke-width: 0.005; */
   }
 
   .navigation-foo {

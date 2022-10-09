@@ -1350,6 +1350,9 @@ h2 {
   }
 
   .logo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 47px;
     height: 30px;
@@ -1615,8 +1618,9 @@ h2 {
   .header__burger {
     z-index: 5;
     display: block;
-    position: relative;
+    position: absolute;
     margin-top: 10px;
+    right: 10px;
     width: 18px;
     height: 10px;
   }
@@ -1624,7 +1628,9 @@ h2 {
   .logo2 {
     position: absolute;
     top: 0;
-    z-index: 5;
+    left: calc(-100% + 10px);
+    z-index: 10;
+    fill:white;
   }
 
   .header__burger:hover {
@@ -1660,8 +1666,8 @@ h2 {
   .header__burger::after {
     bottom: 0;
   }
-  /* 
- .header {
+
+  /* .header {
     position: fixed;
     display: block;
     top: 0;
@@ -1675,27 +1681,43 @@ h2 {
     overflow: auto;
   } */
 
-  .header__navigation {
+  .header-wrap {
     box-sizing: border-box;
     position: fixed;
     display: block;
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 640px;
     height: 100%;
+    margin: 0;
     transform: translate(100%, 0);
     background-color: #FFF;
-    padding: 10px;
+    padding: 0;
     transition: all 0.3s ease 0s;
   }
 
-  .header__navigation._active {
+  .header-wrap._active {
     transform: translate(0, 0);
   }
+
+  /* .header__navigation._active .header {
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  /* .auth {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50px;
+    height: 15px;
+  } */
 
   .navigation {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
   }
 
   .footer__navigation {
@@ -1704,7 +1726,7 @@ h2 {
   }
 
   .navigation-foo .navigation__link {
-    color: #FFF;
+    color: #fff;
   }
 
   .navigation-foo {
@@ -1719,9 +1741,8 @@ h2 {
     color: #000;
   }
 
-
   .header__burger._active span {
-    background-color: #FFF;
+    background-color: transparent;
   }
   .header__burger._active::before {
     top: 50%;
@@ -1733,6 +1754,28 @@ h2 {
     bottom: 50%;
     background-color: #000;
     transform: rotate(45deg) translate(0, 50%);
+  }
+
+  .header-wrap._active .header__navigation {
+    display: flex;
+    padding: 10px;
+    margin-top: 62px;
+  }
+
+  .header-wrap._active .auth__link {
+    display: flex;
+    padding: 10px;
+    color: black;
+  }
+
+  .header-wrap._active .logo2 {
+    left: 10px;
+    top: 10px;
+    fill: #FE9013;
+    border: 1px solid #FE9013;
+    border-radius: 2px;
+    /* stroke:white;
+    stroke-width: 0.005; */
   }
 
   .navigation-foo {
