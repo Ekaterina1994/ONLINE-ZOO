@@ -943,7 +943,7 @@ h2 {
 }
 
 .testimonails__block {
- max-width: 1160px;
+  max-width: 1160px;
   overflow: hidden;
 }
 
@@ -958,8 +958,6 @@ h2 {
   /* width: 268px;
   min-width: 268px; */
 }
-
-
 
 @media (max-width: 1510px) {
   .flower {
@@ -1027,7 +1025,7 @@ h2 {
 
   .testimonails__block {
     justify-content: center;
-   }
+  }
 
   .testimonials__cards {
     margin-left: 30px;
@@ -1696,6 +1694,59 @@ h2 {
     display: block;
     position: absolute;
     margin-top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 10px;
+  }
+
+  .pop-up {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.549);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 1s ease 0s;
+    /* z-index: 10; */
+  }
+
+  .pop-up.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .pop-up-body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .pop-up-content {
+    position: relative;
+    display: flex;
+    max-width: 268px;
+  }
+
+  .pop-up-height {
+    max-height: 391px;
+    min-height: 391px;
+  }
+
+  .pop-up-bottom {
+    height: 100%;
+  }
+
+  .pop-up-close {
+    z-index: 10;
+    display: block;
+    position: absolute;
+    margin-top: 12px;
     right: 10px;
     width: 18px;
     height: 10px;

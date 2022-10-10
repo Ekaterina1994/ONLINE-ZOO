@@ -127,7 +127,7 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
 const LINE = document.getElementById("line");
 const SLIDER = document.getElementById("testimonials__cards");
 const item = document.getElementById("testimonials__cards-item");
-const itemWidth = item.clientWidth;
+// const itemWidth = item.offsetWidth;
 
 LINE.addEventListener(
   "input",
@@ -143,18 +143,43 @@ LINE.addEventListener(
     } else {
       SLIDER.style.transform = `translateX(${-LINE.value * 35}%)`;
     }
-  },
-  false
+  }
 );
 
-// LINE.addEventListener("input", () => {
-//   console.log(this.value);
-// }, false);
 
-// let rangeValue = function(){
-//   var newValue = elem.value;
-//   var target = document.querySelector('.value');
-//   target.innerHTML = newValue;
+// Pop-up
+
+// const popUpItems = document.querySelector(".testimonials__cards-item");
+// const body = document.querySelector("body");
+// const lockPad = document.querySelectorAll(".lock-pad");
+
+// let unlock = true;
+
+// const time = 1000;
+
+// if (popUpItems.length > 0) {
+//   for (let i = 0; i < popUpItems.length; i++) {
+//     const popUpItem = popUpItems[i];
+//     popUpItem.addEventListener("click", () =>
+//     {
+//       const popUpName = popUpItem.getAttribute
+//     })
+//   }
 // }
 
-// elem.addEventListener("input", rangeValue);
+// const popUpCloseItem = document.querySelectorAll(".close-pop-up");
+
+// if (popUpCloseItem.length > 0) {
+//   for (let i = 0; i < popUpCloseItem.length; i++) {
+//     const el = popUpCloseItem[i];
+//     el.addEventListener("click", () =>
+//     {
+//       popUpClose(el.closest(".pop-up"));
+//     })
+//   }
+// }
+
+// const popUpClose = () =>
+// {
+  
+// }
