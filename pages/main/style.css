@@ -1710,6 +1710,7 @@ h2 {
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
+    /* pointer-events: none; */
     transition: all 1s ease 0s;
     /* z-index: 10; */
   }
@@ -1717,6 +1718,8 @@ h2 {
   .pop-up.open {
     opacity: 1;
     visibility: visible;
+    /* pointer-events: all; */
+    transition: 0.5s all;
   }
 
   .pop-up-body {
@@ -1725,7 +1728,14 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    transform: scale(é);
   }
+
+  .pop-up-body.open {
+    transform: scale(1);
+  }
+
+
 
   .pop-up-content {
     position: relative;

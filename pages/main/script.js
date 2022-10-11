@@ -129,57 +129,41 @@ const SLIDER = document.getElementById("testimonials__cards");
 const item = document.getElementById("testimonials__cards-item");
 // const itemWidth = item.offsetWidth;
 
-LINE.addEventListener(
-  "input",
-  () => {
-    console.log(LINE.value);
-    let lineValue = LINE.value;
+LINE.addEventListener("input", () => {
+  console.log(LINE.value);
+  let lineValue = LINE.value;
 
-    LINE.setAttribute("max", 8);
+  LINE.setAttribute("max", 8);
 
-    SLIDER.style.transition = "800ms ease transform";
-    if (item.offsetWidth == 259) {
-      SLIDER.style.transform = `translateX(${-LINE.value * 25}%)`;
-    } else {
-      SLIDER.style.transform = `translateX(${-LINE.value * 35}%)`;
-    }
+  SLIDER.style.transition = "800ms ease transform";
+  if (item.offsetWidth == 259) {
+    SLIDER.style.transform = `translateX(${-LINE.value * 25}%)`;
+  } else {
+    SLIDER.style.transform = `translateX(${-LINE.value * 35}%)`;
   }
-);
-
+});
 
 // Pop-up
 
-// const popUpItems = document.querySelector(".testimonials__cards-item");
-// const body = document.querySelector("body");
-// const lockPad = document.querySelectorAll(".lock-pad");
+let popupBg = document.querySelector(".pop-up");
+let popup = document.querySelector(".pop-up-body");
+let openPopupButtons = document.querySelectorAll(".testimonials__cards-item");
+let closePopupButton = document.querySelector(".close-pop-up");
 
-// let unlock = true;
+openPopupButtons.forEach((card) => {
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    popupBg.classList.add("open");
+    popup.classList.add("open");
+  });
+});
 
-// const time = 1000;
+closePopupButton.addEventListener("click", (e) => {
+  popupBg.classList.remove("open");
+  popup.classList.remove("open");
+  e.preventDefault();
+});
 
-// if (popUpItems.length > 0) {
-//   for (let i = 0; i < popUpItems.length; i++) {
-//     const popUpItem = popUpItems[i];
-//     popUpItem.addEventListener("click", () =>
-//     {
-//       const popUpName = popUpItem.getAttribute
-//     })
-//   }
-// }
-
-// const popUpCloseItem = document.querySelectorAll(".close-pop-up");
-
-// if (popUpCloseItem.length > 0) {
-//   for (let i = 0; i < popUpCloseItem.length; i++) {
-//     const el = popUpCloseItem[i];
-//     el.addEventListener("click", () =>
-//     {
-//       popUpClose(el.closest(".pop-up"));
-//     })
-//   }
-// }
-
-// const popUpClose = () =>
-// {
-  
-// }
+popupBg.addEventListener("click", (e) => {
+  document.querySelector(".pop-up.open").classList.remove("open");
+});
