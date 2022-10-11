@@ -959,6 +959,10 @@ h2 {
   min-width: 268px; */
 }
 
+.animals__card-image-scale {
+  width: 366px;
+}
+
 @media (max-width: 1510px) {
   .flower {
     display: none;
@@ -995,6 +999,51 @@ h2 {
     right: 40px;
     bottom: 40px;
   }
+
+  .carousel-wrapper {
+    display: flex;
+    width: 940px;
+    overflow: hidden;
+  }
+
+  .carousel {
+    left: -940px;
+  }
+
+.animals__cards {
+  display: flex;
+  width: 940px;
+  max-width: 940px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@keyframes to-right {
+  from {
+    left: -940px;
+  }
+  to {
+    left: -1880px;
+  }
+}
+
+@keyframes to-left {
+  from {
+    left: -940px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.transition-right {
+  animation: 3s to-right;
+}
+
+.transition-left {
+  animation: 3s to-left;
+}
+
 }
 
 @media (max-width: 1200px) {
@@ -1080,14 +1129,15 @@ h2 {
 
   .arrow-left {
     position: absolute;
-    left: 50%;
-    transform: translate(-146px, 0);
+    z-index: 10;
+    left: 45%;
+    transform: translate(-100px, 0);
   }
 
   .arrow-right {
     position: absolute;
-    left: 50%;
-    transform: translate(85px, 0);
+    left: 55%;
+    transform: translate(30px, 0);
   }
 
   .pick-and-feed__minititle {
@@ -1311,6 +1361,42 @@ h2 {
     padding-left: 20px;
     max-width: 99%;
   }
+
+  .carousel-wrapper {
+    display: flex;
+    width: 600px;
+    overflow: hidden;
+  }
+
+  .carousel {
+    left: -600px;
+  }
+
+.animals__cards {
+  display: flex;
+  width: 600px;
+  max-width: 600px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@keyframes to-right {
+  from {
+    left: -600px;
+  }
+  to {
+    left: -1200px;
+  }
+}
+
+@keyframes to-left {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 0px;
+  }
+}
 }
 
 @media (max-width: 920px) {
@@ -1710,6 +1796,7 @@ h2 {
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
+    /* pointer-events: none; */
     transition: all 1s ease 0s;
     /* z-index: 10; */
   }
@@ -1717,6 +1804,8 @@ h2 {
   .pop-up.open {
     opacity: 1;
     visibility: visible;
+    /* pointer-events: all; */
+    transition: 0.5s all;
   }
 
   .pop-up-body {
@@ -1725,7 +1814,14 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 30px;
+    transform: scale(é);
   }
+
+  .pop-up-body.open {
+    transform: scale(1);
+  }
+
+
 
   .pop-up-content {
     position: relative;
