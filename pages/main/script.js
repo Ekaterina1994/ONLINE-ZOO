@@ -58,6 +58,12 @@ let pets = [
     place: "Native to Antarctica",
     food: "../../assets/icons/icons_diff/icons_mix/meet-fish_icon.png",
   },
+  {
+    image: "../../assets/images/alligators.jpg",
+    name: "Alligators",
+    place: "Native to Southeastern U. S.",
+    food: "../../assets/icons/icons_diff/icons_mix/meet-fish_icon.png",
+  },
 ];
 
 const ARROW_LEFT = document.getElementById("arrow-left");
@@ -82,9 +88,8 @@ ARROW_LEFT.addEventListener("click", toLeft);
 ARROW_RIGHT.addEventListener("click", toRight);
 
 CAROUSEL.addEventListener("animationend", (animationEvent) => {
-
   const RANDOM = () => {
-    var size = 6,
+    var size = 7,
       arr = [],
       array = [];
 
@@ -100,8 +105,6 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
   };
 
   let x = RANDOM();
-
-console.log(x[0])
 
   if (animationEvent.animationName === "to-left") {
     CAROUSEL.classList.remove("transition-left");
@@ -422,7 +425,6 @@ console.log(x[0])
     RIGHT_CARD.appendChild(card4);
     RIGHT_CARD.appendChild(card5);
     RIGHT_CARD.appendChild(card6);
-
   }
 
   ARROW_LEFT.addEventListener("click", toLeft);
