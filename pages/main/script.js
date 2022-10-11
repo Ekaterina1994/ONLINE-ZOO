@@ -21,6 +21,45 @@ menuBody.addEventListener("click", () => {
 
 // Carousel
 
+let pets = [
+  {
+    image: "../../assets/images/pandas.jpg",
+    name: "Giant pandas",
+    place: "Native to Southwest China",
+    food: "../../assets/icons/icons_diff/icons_mix/banana-bamboo_icon.png",
+  },
+  {
+    image: "../../assets/images/eagles.jpg",
+    name: "Eagles",
+    place: "Native to South America",
+    food: "../../assets/icons/icons_diff/icons_mix/meet-fish_icon.png",
+  },
+  {
+    image: "../../assets/images/gorillas.jpg",
+    name: "Gorillas",
+    place: "Native to Congo",
+    food: "../../assets/icons/icons_diff/icons_mix/banana-bamboo_icon.png",
+  },
+  {
+    image: "../../assets/images/sloth.jpg",
+    name: "Two-toed Sloth",
+    place: "Mesoamerica, South America",
+    food: "../../assets/icons/icons_diff/icons_mix/banana-bamboo_icon.png",
+  },
+  {
+    image: "../../assets/images/cheetahs.jpg",
+    name: "Cheetahs",
+    place: "Native to Africa",
+    food: "../../assets/icons/icons_diff/icons_mix/meet-fish_icon.png",
+  },
+  {
+    image: "../../assets/images/penguins.jpg",
+    name: "Penguins",
+    place: "Native to Antarctica",
+    food: "../../assets/icons/icons_diff/icons_mix/meet-fish_icon.png",
+  },
+];
+
 const ARROW_LEFT = document.getElementById("arrow-left");
 const ARROW_RIGHT = document.getElementById("arrow-right");
 const CAROUSEL = document.getElementById("carousel");
@@ -42,9 +81,28 @@ const toRight = () => {
 ARROW_LEFT.addEventListener("click", toLeft);
 ARROW_RIGHT.addEventListener("click", toRight);
 
-const RANDOM_NUMBER = () => Math.round(Math.random() * 5) + 1;
-
 CAROUSEL.addEventListener("animationend", (animationEvent) => {
+
+  const RANDOM = () => {
+    var size = 6,
+      arr = [],
+      array = [];
+
+    for (var i = 0; i < size; i++) {
+      arr.push(i);
+    }
+
+    for (var i = 0; i < size; i++) {
+      var value = arr.splice(Math.round(Math.random() * (size - i - 1)), 1);
+      array.push(value.pop());
+    }
+    return array;
+  };
+
+  let x = RANDOM();
+
+console.log(x[0])
+
   if (animationEvent.animationName === "to-left") {
     CAROUSEL.classList.remove("transition-left");
 
@@ -55,67 +113,316 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
 
     document.getElementById("active-cards").innerHTML = leftCards;
 
-    // const firstCard = document.getElementById(
-    //   "random" + Math.round(Math.random() * 5) + 1
-    // ).innerHTML;
-    // let secondCard = document.getElementById(
-    //   "random" + `${RANDOM_NUMBER()}`
-    // ).innerHTML;
-    // let thirdCard = document.getElementById(
-    //   "random" + `${RANDOM_NUMBER()}`
-    // ).innerHTML;
-    // let fourthCard = document.getElementById(
-    //   "random" + `${RANDOM_NUMBER()}`
-    // ).innerHTML;
-    // let fifthCard = document.getElementById(
-    //   "random" + `${RANDOM_NUMBER()}`
-    // ).innerHTML;
-    // let sixthCard = document.getElementById(
-    //   "random" + `${RANDOM_NUMBER()}`
-    // ).innerHTML;
-
-    document.getElementById("active-cards").innerHTML = leftCards;
-    // document.getElementById("random1").innerHTML = firstCard;
-    // document.getElementById("random2").innerHTML = secondCard;
-    // document.getElementById("random3").innerHTML = thirdCard;
-    // document.getElementById("random4").innerHTML = fourthCard;
-    // document.getElementById("random5").innerHTML = fifthCard;
-    // document.getElementById("random6").innerHTML = sixthCard;
-
     const card1 = document.createElement("div");
     card1.classList.add("animals__cards-item");
-    // let firstCard = document.getElementById("random" + `${RANDOM_NUMBER()}`).innerHTML;
-    card1.innerHTML = Math.round(Math.random() * 5) + 1;
+    card1.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[0]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[0]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[0]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[0]].food}
+        />
+      </div>
+    </div>
+  </div>`;
 
-    // const card2 = document.createElement("div");
-    // card2.classList.add("animals__cards-item");
-    // card2.innerHTML = secondCard;
+    const card2 = document.createElement("div");
+    card2.classList.add("animals__cards-item");
+    card2.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[1]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[1]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[1]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[1]].food}
+        />
+      </div>
+    </div>
+  </div>`;
 
-    // const card3 = document.createElement("div");
-    // card3.classList.add("animals__cards-item");
-    // card3.innerHTML = thirdCard;
+    const card3 = document.createElement("div");
+    card3.classList.add("animals__cards-item");
+    card3.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[2]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[2]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[2]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[2]].food}
+        />
+      </div>
+    </div>
+  </div>`;
 
-    // const card4 = document.createElement("div");
-    // card4.classList.add("animals__cards-item");
-    // card4.innerHTML = fourthCard;
+    const card4 = document.createElement("div");
+    card4.classList.add("animals__cards-item");
+    card4.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[3]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[3]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[3]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[3]].food}
+        />
+      </div>
+    </div>
+  </div>`;
 
-    // const card5 = document.createElement("div");
-    // card5.classList.add("animals__cards-item");
-    // card5.innerHTML = fifthCard;
+    const card5 = document.createElement("div");
+    card5.classList.add("animals__cards-item");
+    card5.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[4]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[4]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[4]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[4]].food}
+        />
+      </div>
+    </div>
+  </div>`;
 
-    // const card6 = document.createElement("div");
-    // card6.classList.add("animals__cards-item");
-    // card6.innerHTML = sixthCard;
+    const card6 = document.createElement("div");
+    card6.classList.add("animals__cards-item");
+    card6.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[5]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[5]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[5]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[5]].food}
+        />
+      </div>
+    </div>
+  </div>`;
 
     LEFT_CARD.innerHTML = "";
     LEFT_CARD.appendChild(card1);
-    // LEFT_CARD.appendChild(card2);
-    // LEFT_CARD.appendChild(card3);
-    // LEFT_CARD.appendChild(card4);
-    // LEFT_CARD.appendChild(card5);
-    // LEFT_CARD.appendChild(card6);
+    LEFT_CARD.appendChild(card2);
+    LEFT_CARD.appendChild(card3);
+    LEFT_CARD.appendChild(card4);
+    LEFT_CARD.appendChild(card5);
+    LEFT_CARD.appendChild(card6);
   } else {
     CAROUSEL.classList.remove("transition-right");
+
+    const rightCards = RIGHT_CARD.innerHTML;
+
+    document.getElementById("active-cards").innerHTML = rightCards;
+
+    const card1 = document.createElement("div");
+    card1.classList.add("animals__cards-item");
+    card1.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[0]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[0]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[0]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[0]].food}
+        />
+      </div>
+    </div>
+  </div>`;
+
+    const card2 = document.createElement("div");
+    card2.classList.add("animals__cards-item");
+    card2.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[1]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[1]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[1]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[1]].food}
+        />
+      </div>
+    </div>
+  </div>`;
+
+    const card3 = document.createElement("div");
+    card3.classList.add("animals__cards-item");
+    card3.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[2]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[2]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[2]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[2]].food}
+        />
+      </div>
+    </div>
+  </div>`;
+
+    const card4 = document.createElement("div");
+    card4.classList.add("animals__cards-item");
+    card4.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[3]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[3]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[3]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[3]].food}
+        />
+      </div>
+    </div>
+  </div>`;
+
+    const card5 = document.createElement("div");
+    card5.classList.add("animals__cards-item");
+    card5.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[4]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[4]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[4]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[4]].food}
+        />
+      </div>
+    </div>
+  </div>`;
+
+    const card6 = document.createElement("div");
+    card6.classList.add("animals__cards-item");
+    card6.innerHTML = `<div class="animals__cards-item">
+    <div class="animals__card-image">
+      <img
+        class="animals__card-image-scale"
+        src=${pets[x[5]].image}
+      />
+    </div>
+    <div class="animals__card-description">
+      <div class="animals__card-text">
+        <p class="animals__card-name">${pets[x[5]].name}</p>
+        <p class="animals__card-text2">
+        ${pets[x[5]].place}
+        </p>
+      </div>
+      <div class="animals__card-food">
+        <img
+          src=${pets[x[5]].food}
+        />
+      </div>
+    </div>
+  </div>`;
+
+    RIGHT_CARD.innerHTML = "";
+    RIGHT_CARD.appendChild(card1);
+    RIGHT_CARD.appendChild(card2);
+    RIGHT_CARD.appendChild(card3);
+    RIGHT_CARD.appendChild(card4);
+    RIGHT_CARD.appendChild(card5);
+    RIGHT_CARD.appendChild(card6);
+
   }
 
   ARROW_LEFT.addEventListener("click", toLeft);
