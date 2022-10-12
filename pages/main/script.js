@@ -436,7 +436,7 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
 const LINE = document.getElementById("line");
 const SLIDER = document.getElementById("testimonials__cards");
 const item = document.getElementById("testimonials__cards-item");
-// const itemWidth = item.offsetWidth;
+// const itemWidth = item.clientWidth;
 
 LINE.addEventListener("input", () => {
   console.log(LINE.value);
@@ -445,10 +445,10 @@ LINE.addEventListener("input", () => {
   LINE.setAttribute("max", 8);
 
   SLIDER.style.transition = "800ms ease transform";
-  if (item.offsetWidth == 259) {
+  if (window.innerWidth == 1600) {
     SLIDER.style.transform = `translateX(${-LINE.value * 25}%)`;
   } else {
-    SLIDER.style.transform = `translateX(${-LINE.value * 35}%)`;
+    SLIDER.style.transform = `translateX(${-LINE.value * 34.75}%)`;
   }
 });
 
